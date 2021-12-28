@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Norican&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <section class="head">
+        <div class="content-header">
+          <header class="header">
+            <a href="" class="logo">Biem Law Firm</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li><a href="#cabinet">Cabinet</a></li>
+              <li><a href="#competences">Compétances</a></li>
+              <li><a href="#equipe">Equipe</a></li>
+              <li><a href="#contact">Récompenses</a></li>
+              <li><a href="#actualite">Actualités</a></li>
+              <li><a href="#contact">Contacts</a></li>
+            </ul>
+          </header>
+          <div class="hero">
+            <div class="left">
+              <div class="content">
+                <div class="titre">Biem Law Firm</div>
+                <div class="sub">Lorem ipsum dolor sit amet consectetur.</div>
+              </div>
+            </div>
+            <div class="right"></div>
+            <div class="route-section route-header">
+              <div class="route-titre">LE CABINET</div>
+              <div class="route-dest" onclick="scrollToContent('cabinet')">
+                <i class="bx bx-chevron-down bx-tada"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-nav cabinet" id="cabinet">
+        <div class="content-section">
+          <p class="s-titre">
+            <span>le</span> <br />
+            CABINET
+          </p>
+          <p class="s-sub">
+            <span>BIEME LAW FIRM</span> est un cabinet d'avocats qui intervient
+            en conseil comme en contentieux pour ses clients, personnes
+            physiques et morales entreprises nationales et internationales,
+            institutions financières, établissements publics, organisations non
+            gouvernementales dans les differents domaines du droit
+          </p>
+          <div class="separateur"></div>
+          <div class="route-section">
+            <div class="route-titre">LES COMPÉTENCES</div>
+            <div class="route-dest" onclick="scrollToContent('competences')">
+              <i class="bx bx-chevron-down bx-tada"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-nav competences" id="competences">
+        <div class="content-section">
+          <p class="s-titre">
+            <span>les</span> <br />
+            COMPÉTENCES
+          </p>
+          <div class="content">
+            <article class="compet">
+              <div class="compet-icon">
+                <img
+                  src="./assets/images/icons8_user_groups_120px.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="compet-titre">Droit des sociétés</div>
+              <hr />
+              <div class="compet-sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                perferendis, soluta repellat maiores reiciendis itaque deleniti
+                assumenda dignissimos. Alias beatae veritatis rerum rem deserunt
+                molestiae quia aperiam perspiciatis similique velit.
+              </div>
+            </article>
+            <article class="compet">
+              <div class="compet-icon">
+                <img
+                  src="./assets/images/icons8_money_bag_120px.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="compet-titre">Droit bancaire</div>
+              <hr />
+              <div class="compet-sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                perferendis, soluta repellat maiores reiciendis itaque deleniti
+                assumenda dignissimos. Alias beatae veritatis rerum rem deserunt
+                molestiae quia aperiam perspiciatis similique velit.
+              </div>
+            </article>
+            <article class="compet">
+              <div class="compet-icon">
+                <img
+                  src="./assets/images/icons8_check_file_120px.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="compet-titre">Droit fiscal</div>
+              <hr />
+              <div class="compet-sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                perferendis, soluta repellat maiores reiciendis itaque deleniti
+                assumenda dignissimos. Alias beatae veritatis rerum rem deserunt
+                molestiae quia aperiam perspiciatis similique velit.
+              </div>
+            </article>
+            <article class="compet">
+              <div class="compet-icon">
+                <img
+                  src="./assets/images/icons8_family_120px_1.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="compet-titre">Droit de la familles</div>
+              <hr />
+              <div class="compet-sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                perferendis, soluta repellat maiores reiciendis itaque deleniti
+                assumenda dignissimos. Alias beatae veritatis rerum rem deserunt
+                molestiae quia aperiam perspiciatis similique velit.
+              </div>
+            </article>
+            <article class="compet">
+              <div class="compet-icon">
+                <img
+                  src="./assets/images/icons8_work_120px.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="compet-titre">
+                Droit du travail et de sécurité sociale
+              </div>
+              <hr />
+              <div class="compet-sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                perferendis, soluta repellat maiores reiciendis itaque deleniti
+                assumenda dignissimos. Alias beatae veritatis rerum rem deserunt
+                molestiae quia aperiam perspiciatis similique velit.
+              </div>
+            </article>
+            <article class="compet">
+              <div class="compet-icon">
+                <img
+                  src="./assets/images/icons8_law_120px.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="compet-titre">Droit pénal</div>
+              <hr />
+              <div class="compet-sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                perferendis, soluta repellat maiores reiciendis itaque deleniti
+                assumenda dignissimos. Alias beatae veritatis rerum rem deserunt
+                molestiae quia aperiam perspiciatis similique velit.
+              </div>
+            </article>
+            <article class="compet">
+              <div class="compet-icon">
+                <img
+                  src="./assets/images/icons8_prefab_house_120px.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="compet-titre">Droit foncier et immobilier</div>
+              <hr />
+              <div class="compet-sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                perferendis, soluta repellat maiores reiciendis itaque deleniti
+                assumenda dignissimos. Alias beatae veritatis rerum rem deserunt
+                molestiae quia aperiam perspiciatis similique velit.
+              </div>
+            </article>
+            <article class="compet">
+              <div class="compet-icon">
+                <img
+                  src="./assets/images/icons8_cloud_120px.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="compet-titre">Droit aérien</div>
+              <hr />
+              <div class="compet-sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                perferendis, soluta repellat maiores reiciendis itaque deleniti
+                assumenda dignissimos. Alias beatae veritatis rerum rem deserunt
+                molestiae quia aperiam perspiciatis similique velit.
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="separateur"></div>
+        <div class="route-section">
+          <div class="route-titre">L'ÉQUIPE</div>
+          <div class="route-dest" onclick="scrollToContent('equipe')">
+            <i class="bx bx-chevron-down bx-tada"></i>
+          </div>
+        </div>
+      </section>
+      <section class="section-nav equipe-section" id="equipe">
+        <div class="content-section">
+          <p class="s-titre">
+            <span>l'</span> <br />
+            ÉQUIPE
+          </p>
+          <div class="content">
+            <article class="equipe">
+              <div class="image">
+                <img
+                  src="https://cdn.icon-icons.com/icons2/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="identite">
+                <div class="nom">Elvis Mayo Bieme Ngalisame</div>
+                <div class="designation">Avocat Manager</div>
+              </div>
+            </article>
+            <article class="equipe">
+              <div class="image">
+                <img
+                  src="https://cdn.icon-icons.com/icons2/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="identite">
+                <div class="nom">Fanny Nsimba Wansaula</div>
+                <div class="designation">Avocate</div>
+              </div>
+            </article>
+            <article class="equipe">
+              <div class="image">
+                <img
+                  src="https://cdn.icon-icons.com/icons2/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="identite">
+                <div class="nom">Hosni Wembonyama Ossongo</div>
+                <div class="designation">Avocate</div>
+              </div>
+            </article>
+            <article class="equipe">
+              <div class="image">
+                <img
+                  src="https://cdn.icon-icons.com/icons2/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="identite">
+                <div class="nom">Judée Kizir Bisuka</div>
+                <div class="designation">Avocate</div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="separateur"></div>
+        <div class="route-section">
+          <div class="route-titre">ACTUALITES</div>
+          <div class="route-dest" onclick="scrollToContent('actualite')">
+            <i class="bx bx-chevron-down bx-tada"></i>
+          </div>
+        </div>
+      </section>
+      <section class="section-nav actualite-section" id="actualite">
+        <div class="content-section">
+          <p class="s-titre">
+            <span>dernières</span> <br />
+            ACTUALITES
+          </p>
+          <div class="content">
+            <article class="post">
+              <div class="image"></div>
+              <div class="titre">Lorem ipsum dolor sit amet consectetur.</div>
+              <div class="desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorem iste accusantium necessitatibus impedit, vitae sed
+                delectus maiores ab, rerum cumque molestiae deleniti doloribus
+                quas autem? Suscipit ab praesentium ducimus voluptatem!
+              </div>
+              <div class="post-footer">
+                <div class="post-footer-item time">21/11/2021</div>
+                <div class="post-footer-item read">
+                  <a href=""> Lire plus</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="post">
+              <div class="image"></div>
+              <div class="titre">Lorem ipsum dolor sit amet consectetur.</div>
+              <div class="desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorem iste accusantium necessitatibus impedit, vitae sed
+                delectus maiores ab, rerum cumque molestiae deleniti doloribus
+                quas autem? Suscipit ab praesentium ducimus voluptatem!
+              </div>
+              <div class="post-footer">
+                <div class="post-footer-item time">21/11/2021</div>
+                <div class="post-footer-item read">
+                  <a href=""> Lire plus</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="post">
+              <div class="image"></div>
+              <div class="titre">Lorem ipsum dolor sit amet consectetur.</div>
+              <div class="desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorem iste accusantium necessitatibus impedit, vitae sed
+                delectus maiores ab, rerum cumque molestiae deleniti doloribus
+                quas autem? Suscipit ab praesentium ducimus voluptatem!
+              </div>
+              <div class="post-footer">
+                <div class="post-footer-item time">21/11/2021</div>
+                <div class="post-footer-item read">
+                  <a href=""> Lire plus</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="route-section">
+          <div class="route-titre">LE CABINET</div>
+          <div class="route-dest" onclick="scrollToContent('contact')">
+            <i class="bx bx-chevron-down bx-tada"></i>
+          </div>
+        </div>
+      </section>
+      <section class="section-nav contact-section" id="contact">
+        <div class="content-section">
+          <p class="s-titre">
+            <span></span> <br />
+            CONTACTEZ-NOUS
+          </p>
+        </div>
+        <div class="content">
+          <div class="contact-item1 ">
+            <i class='bx bxs-map'></i>
+            <span>4, Rue colonel Ebeya</span>
+          </div>
+          <div class="contact-item1 ">
+            <i class='bx bx-mail-send'></i>
+            <span> contact@bieme-avocats.com</span>
+          </div>
+          <div class="contact-item ">
+           <p class="p1">Local 311, 3ème Etage, Immeuble Ave Maria</p>
+           <p class="p2">Commune de la Gombe, Ville de Kinshasa, RDC</p>
+           <p class="p3">BP 182 KIN I-NIF: A1919797Q</p>
+            <p class="p4">Tél: +243 81 73 507 33</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
