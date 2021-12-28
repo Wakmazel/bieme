@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,14 +28,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/index.css" />
-
+   
     <title>Biem Law Firm</title>
   </head>
   <body>
     <div class="main-container">
       <section class="head">
         <div class="content-header">
-          <header class="header">
+          <header class="header" data-aos="fade-down">
             <a href="" class="logo">Biem Law Firm</a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -49,13 +50,14 @@
           </header>
           <div class="hero">
             <div class="left">
-              <div class="content">
+              <div class="content" data-aos="fade-right">
                 <div class="titre">Biem Law Firm</div>
                 <div class="sub">Lorem ipsum dolor sit amet consectetur.</div>
               </div>
             </div>
             <div class="right"></div>
-            <div class="route-section route-header">
+            <div class="route-section route-header" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
               <div class="route-titre">LE CABINET</div>
               <div class="route-dest" onclick="scrollToContent('cabinet')">
                 <i class="bx bx-chevron-down bx-tada"></i>
@@ -65,7 +67,7 @@
         </div>
       </section>
       <section class="section-nav cabinet" id="cabinet">
-        <div class="content-section">
+        <div class="content-section" data-aos="fade-right">
           <p class="s-titre">
             <span>le</span> <br />
             CABINET
@@ -78,7 +80,8 @@
             gouvernementales dans les differents domaines du droit
           </p>
           <div class="separateur"></div>
-          <div class="route-section">
+          <div class="route-section" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
             <div class="route-titre">LES COMPÉTENCES</div>
             <div class="route-dest" onclick="scrollToContent('competences')">
               <i class="bx bx-chevron-down bx-tada"></i>
@@ -86,14 +89,15 @@
           </div>
         </div>
       </section>
-      <section class="section-nav competences" id="competences">
+      <section class="section-nav competences" id="competences" data-aos="fade-right">
         <div class="content-section">
           <p class="s-titre">
             <span>les</span> <br />
             COMPÉTENCES
           </p>
           <div class="content">
-            <article class="compet">
+            <article data-aos="fade-up"
+     data-aos-duration="3000" class="compet">
               <div class="compet-icon">
                 <img
                   src="./assets/images/icons8_user_groups_120px.png"
@@ -110,7 +114,8 @@
                 molestiae quia aperiam perspiciatis similique velit.
               </div>
             </article>
-            <article class="compet">
+            <article data-aos="fade-up"
+     data-aos-duration="3000" class="compet">
               <div class="compet-icon">
                 <img
                   src="./assets/images/icons8_money_bag_120px.png"
@@ -127,7 +132,8 @@
                 molestiae quia aperiam perspiciatis similique velit.
               </div>
             </article>
-            <article class="compet">
+            <article data-aos="fade-up"
+     data-aos-duration="3000" class="compet">
               <div class="compet-icon">
                 <img
                   src="./assets/images/icons8_check_file_120px.png"
@@ -144,7 +150,8 @@
                 molestiae quia aperiam perspiciatis similique velit.
               </div>
             </article>
-            <article class="compet">
+            <article data-aos="fade-up"
+     data-aos-duration="3000" class="compet">
               <div class="compet-icon">
                 <img
                   src="./assets/images/icons8_family_120px_1.png"
@@ -161,7 +168,8 @@
                 molestiae quia aperiam perspiciatis similique velit.
               </div>
             </article>
-            <article class="compet">
+            <article data-aos="fade-up"
+     data-aos-duration="3000" class="compet">
               <div class="compet-icon">
                 <img
                   src="./assets/images/icons8_work_120px.png"
@@ -180,7 +188,8 @@
                 molestiae quia aperiam perspiciatis similique velit.
               </div>
             </article>
-            <article class="compet">
+            <article data-aos="fade-up"
+     data-aos-duration="3000" class="compet">
               <div class="compet-icon">
                 <img
                   src="./assets/images/icons8_law_120px.png"
@@ -197,7 +206,8 @@
                 molestiae quia aperiam perspiciatis similique velit.
               </div>
             </article>
-            <article class="compet">
+            <article data-aos="fade-up"
+     data-aos-duration="3000" class="compet">
               <div class="compet-icon">
                 <img
                   src="./assets/images/icons8_prefab_house_120px.png"
@@ -214,7 +224,8 @@
                 molestiae quia aperiam perspiciatis similique velit.
               </div>
             </article>
-            <article class="compet">
+            <article data-aos="fade-up"
+     data-aos-duration="3000" class="compet">
               <div class="compet-icon">
                 <img
                   src="./assets/images/icons8_cloud_120px.png"
@@ -234,21 +245,23 @@
           </div>
         </div>
         <div class="separateur"></div>
-        <div class="route-section">
+        <div class="route-section" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
           <div class="route-titre">L'ÉQUIPE</div>
           <div class="route-dest" onclick="scrollToContent('equipe')">
             <i class="bx bx-chevron-down bx-tada"></i>
           </div>
         </div>
       </section>
-      <section class="section-nav equipe-section" id="equipe">
+      <section class="section-nav equipe-section" id="equipe" data-aos="fade-right">
         <div class="content-section">
           <p class="s-titre">
             <span>l'</span> <br />
             ÉQUIPE
           </p>
           <div class="content">
-            <article class="equipe">
+            <article data-aos="fade-up"
+     data-aos-duration="3000" class="equipe">
               <div class="image">
                 <img
                   src="https://cdn.icon-icons.com/icons2/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png"
@@ -261,7 +274,8 @@
                 <div class="designation">Avocat Manager</div>
               </div>
             </article>
-            <article class="equipe">
+            <article data-aos="fade-up"
+     data-aos-duration="3000" class="equipe">
               <div class="image">
                 <img
                   src="https://cdn.icon-icons.com/icons2/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png"
@@ -274,7 +288,8 @@
                 <div class="designation">Avocate</div>
               </div>
             </article>
-            <article class="equipe">
+            <article data-aos="fade-up"
+     data-aos-duration="3000" class="equipe">
               <div class="image">
                 <img
                   src="https://cdn.icon-icons.com/icons2/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png"
@@ -287,7 +302,8 @@
                 <div class="designation">Avocate</div>
               </div>
             </article>
-            <article class="equipe">
+            <article data-aos="fade-up"
+     data-aos-duration="3000" class="equipe">
               <div class="image">
                 <img
                   src="https://cdn.icon-icons.com/icons2/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png"
@@ -303,21 +319,23 @@
           </div>
         </div>
         <div class="separateur"></div>
-        <div class="route-section">
+        <div class="route-section" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
           <div class="route-titre">ACTUALITES</div>
           <div class="route-dest" onclick="scrollToContent('actualite')">
             <i class="bx bx-chevron-down bx-tada"></i>
           </div>
         </div>
       </section>
-      <section class="section-nav actualite-section" id="actualite">
+      <section class="section-nav actualite-section" id="actualite" data-aos="fade-right">
         <div class="content-section">
           <p class="s-titre">
             <span>dernières</span> <br />
             ACTUALITES
           </p>
           <div class="content">
-            <article class="post">
+            <article data-aos="fade-up"
+     data-aos-duration="3000" class="post">
               <div class="image"></div>
               <div class="titre">Lorem ipsum dolor sit amet consectetur.</div>
               <div class="desc">
@@ -334,7 +352,8 @@
               </div>
             </article>
 
-            <article class="post">
+            <article data-aos="fade-up"
+     data-aos-duration="3000" class="post">
               <div class="image"></div>
               <div class="titre">Lorem ipsum dolor sit amet consectetur.</div>
               <div class="desc">
@@ -351,7 +370,8 @@
               </div>
             </article>
 
-            <article class="post">
+            <article data-aos="fade-up"
+     data-aos-duration="3000" class="post">
               <div class="image"></div>
               <div class="titre">Lorem ipsum dolor sit amet consectetur.</div>
               <div class="desc">
@@ -369,14 +389,15 @@
             </article>
           </div>
         </div>
-        <div class="route-section">
-          <div class="route-titre">LE CABINET</div>
+        <div class="route-section" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+          <div class="route-titre">NOUS CONTACTER</div>
           <div class="route-dest" onclick="scrollToContent('contact')">
             <i class="bx bx-chevron-down bx-tada"></i>
           </div>
         </div>
       </section>
-      <section class="section-nav contact-section" id="contact">
+      <section class="section-nav contact-section" id="contact" data-aos="fade-right">
         <div class="content-section">
           <p class="s-titre">
             <span></span> <br />
@@ -401,6 +422,12 @@
         </div>
       </section>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
     <script src="assets/js/app.js"></script>
   </body>
 </html>
