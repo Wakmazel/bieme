@@ -4,3 +4,8 @@
     align-items: center;
     flex-direction: $direction;
 }
+@mixin mb-size($prop, $value) {
+    @media screen and (max-width:600px) {
+       #{$prop}: $value !important;
+    }
+}

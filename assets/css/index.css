@@ -2,29 +2,35 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Yeseva One";
-  background: #f3f3f3;
 }
 
-.head {
+.head-full {
   position: relative;
   height: 100vh;
   width: 100%;
   background: url("https://images.pexels.com/photos/8112201/pexels-photo-8112201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.full {
+  height: 100vh;
+}
+
+.head {
   z-index: 10;
 }
 
 .head .content-header {
   position: absolute;
-  z-index: 0;
+  z-index: 10;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.242)));
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.242));
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   /* menu */
   /* menu icon */
   /* menu btn */
@@ -47,7 +53,7 @@ body {
   padding: 10px 20px;
   text-decoration: none;
   color: white;
-  font-family: 'Lato';
+  font-family: "Poppins";
   font-weight: 700;
 }
 
@@ -76,8 +82,8 @@ body {
 .head .content-header .header .menu {
   clear: both;
   max-height: 0;
-  -webkit-transition: max-height .2s ease-out;
-  transition: max-height .2s ease-out;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 
 .head .content-header .header .menu-icon {
@@ -97,20 +103,20 @@ body {
   display: block;
   height: 2px;
   position: relative;
-  -webkit-transition: background .2s ease-out;
-  transition: background .2s ease-out;
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
   width: 18px;
 }
 
 .head .content-header .header .menu-icon .navicon:before,
 .head .content-header .header .menu-icon .navicon:after {
   background: white;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   position: absolute;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   width: 100%;
 }
 
@@ -307,7 +313,7 @@ body {
 }
 
 .section-nav .content-section .s-titre {
-  font-size: 40px;
+  font-size: 30px;
   width: 100%;
   text-align: center;
   position: relative;
@@ -381,13 +387,14 @@ body {
 .competences .content article {
   width: 40%;
   position: relative;
-  margin: 0 10px 25px 0;
+  margin: 0 10px 25px 10px;
   padding: 10px 10px 10px 25px;
   z-index: 1;
+  border: solid 3px grey;
 }
 
 .competences .content article::before {
-  content: '';
+  content: "";
   position: absolute;
   border-radius: 100px;
   width: 70px;
@@ -398,11 +405,11 @@ body {
 }
 
 .competences .content article::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 70px;
   height: 70px;
-  background: rgba(255, 0, 0, 0.197);
+  background: rgba(193, 193, 193, 0.197);
   bottom: 0%;
   left: 0%;
   z-index: 0;
@@ -411,7 +418,7 @@ body {
 .competences .content article .compet-titre {
   font-size: 25px;
   margin-bottom: 10px;
-  font-family: 'Norican';
+  font-family: "Norican";
   font-weight: 900;
 }
 
@@ -548,7 +555,7 @@ body {
 }
 
 .equipe-section .content-section .content article .identite .designation {
-  font-family: 'Lato';
+  font-family: "Lato";
 }
 
 .actualite-section {
@@ -569,7 +576,7 @@ body {
 }
 
 .s-titre::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 60px;
   height: 8px;
@@ -639,7 +646,7 @@ body {
 }
 
 #actualite .content-section .content article .desc {
-  font-family: 'Lato';
+  font-family: "Lato";
   padding: 12px;
 }
 
@@ -671,82 +678,12 @@ body {
   background: black;
   color: white;
   padding: 15px;
-  font-family: 'Lato';
+  font-family: "Lato";
 }
 
 #actualite .content-section .content article .post-footer .read a {
   text-decoration: none;
   color: white;
-}
-
-.contact-section {
-  font-family: "Lato";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.contact-section .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.contact-section .content .contact-item1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-bottom: 10px;
-}
-
-.contact-section .content .contact-item1 i {
-  font-size: 25px;
-  background: rgba(0, 0, 0, 0.167);
-  color: black;
-  padding: 5px;
-  border-radius: 50px;
-}
-
-.contact-section .content .contact-item1 span {
-  font-weight: 700;
-  font-size: 20px;
-  margin: 0 15px;
-}
-
-.contact-section .content p {
-  text-align: center;
-  font-weight: 600;
-  font-size: 20px;
 }
 
 @media (max-width: 900px) {
@@ -808,5 +745,229 @@ body {
   .section-nav .content-section .content article {
     width: 90% !important;
   }
+}
+
+.contact-section {
+  font-family: "Lato";
+  width: 100%;
+  background: black;
+  color: white;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-section .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-section .content .contact-item1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.contact-section .content .contact-item1 i {
+  font-size: 25px;
+  background: rgba(255, 255, 255, 0.352);
+  color: white;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.contact-section .content .contact-item1 span {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 15px;
+}
+
+.contact-section .content p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.team-header {
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: url("https://images.pexels.com/photos/8112201/pexels-photo-8112201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+  .team-header {
+    height: 35vh !important;
+  }
+}
+
+.team-header .item {
+  background: rgba(0, 0, 0, 0.455);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team-header .item img {
+  width: 150px;
+  border-radius: 100px;
+  background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .team-header .item img {
+    width: 100px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .team-header .item img {
+    margin-top: 50px !important;
+  }
+}
+
+.team-header .item .name {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  color: white;
+  font-family: "poppins";
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .team-header .item .name {
+    font-size: 1.2rem !important;
+  }
+}
+
+.team-header .item .fonction {
+  font-size: 1.8rem;
+  color: white;
+  font-family: "poppins";
+  text-align: center;
+  position: relative;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 600px) {
+  .team-header .item .fonction {
+    font-size: 1rem !important;
+  }
+}
+
+.team-header .item .fonction::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 30%;
+  height: 6px;
+  background: red;
+}
+
+.team_content__item {
+  font-size: 1.2rem;
+  padding: 2rem 0rem;
+  width: 50%;
+  margin: auto;
+  font-family: "Lato";
+  background: white !important;
+}
+
+@media screen and (max-width: 600px) {
+  .team_content__item {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .team_content__item {
+    font-size: 1rem !important;
+  }
+}
+
+.team_content__item .titre {
+  margin: 20px 0;
+  color: #2b2b2b;
+  font-family: "poppins";
+  text-align: left;
+  position: relative;
+  font-weight: 700;
+}
+
+.team_content__item .titre::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 10%;
+  height: 5px;
+  background: red;
+}
+
+.team_content__item .publications span {
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Yeseva One";
+}
+
+.content a {
+  text-decoration: none;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
 }
 /*# sourceMappingURL=index.css.map */
